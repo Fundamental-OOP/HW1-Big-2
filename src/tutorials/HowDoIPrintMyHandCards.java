@@ -1,8 +1,6 @@
 package tutorials;
 
-/**
- * @author - johnny850807@gmail.com (Waterball)
- */
+
 public class HowDoIPrintMyHandCards {
     public static void main(String[] args) {
         // You can align your hand-cards like this,
