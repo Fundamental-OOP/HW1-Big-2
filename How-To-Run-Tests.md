@@ -1,12 +1,11 @@
 # How To Run Tests
 
-TL;DR
-===
-Run `bash test.sh`
+There are two ways to run the tests: 
 
-Manual Steps
-===
-Follow the steps below under your project directory:
+1. Run the test via shell script
+Run `bash test.sh`
+   
+2. Run each test manually
 1. `cd src`
 2. `javac TestSuite.java -d ../out/`
 3. `cd ..`
