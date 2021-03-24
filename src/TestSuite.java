@@ -11,6 +11,16 @@ public class TestSuite {
     private static String expectedOutput;
     private static ByteArrayOutputStream programOutput;
 
+    /**
+     * Compile and run this TestSuite:
+     * 1. cd src/
+     * 2. javac TestSuite.java -d ../out/
+     * 3. cd ..
+     * 4. java -cp out/ TestSuite <testcase name>
+     *
+     * Or you can directly run `sh test.sh`.
+     * The script helps you do all the above.
+     */
     public static void main(String[] args) throws IOException {
         if (args.length < 1) {
             System.out.println("You must provide the test name as the first argument.");
@@ -54,11 +64,11 @@ public class TestSuite {
             }
         }
         if (actualOutputLines.length > expectedOutputLines.length) {
-            printTestReport(actualOutputLines, expectedOutputLines, expectedOutputLines.length+1);
+            printTestReport(actualOutputLines, expectedOutputLines, expectedOutputLines.length + 1);
             return false;
         }
         if (expectedOutputLines.length > actualOutputLines.length) {
-            printTestReport(actualOutputLines, expectedOutputLines, actualOutputLines.length+1);
+            printTestReport(actualOutputLines, expectedOutputLines, actualOutputLines.length + 1);
             return false;
         }
         return true;
