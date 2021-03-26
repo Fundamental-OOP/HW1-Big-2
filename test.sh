@@ -2,7 +2,7 @@
 
 rm -r out/
 cd src
-javac TestSuite.java -d ../out/
+javac -cp . TestSuite.java -d ../out/
 cd ..
 java -cp out/ TestSuite always-play-first-card && \
 java -cp out/ TestSuite normal-no-error-play1 && \

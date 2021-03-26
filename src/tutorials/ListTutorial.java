@@ -52,7 +52,7 @@ public class ListTutorial {
         System.out.println(numbers.indexOf("<(-W-)>"));  // -1 (Not found)
         System.out.println(numbers.lastIndexOf("2"));  // 2
         System.out.println(numbers.containsAll(Arrays.asList("1", "2"))); // false
-        System.out.println(numbers.containsAll(Arrays.asList("2", "3"))); // false
+        System.out.println(numbers.containsAll(Arrays.asList("2", "3"))); // true
 
 
         // You can convert the list into array like this
